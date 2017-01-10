@@ -1,0 +1,24 @@
+h1 {
+  color: #cc0000;
+}
+
+.even { background-color: lightblue; }
+.odd { background-color: deepskyblue; }
+.selected {
+    background-color: #CFD8DC !important;
+    color: white;
+}
+.badge {
+    display: inline-block;
+    padding: 0.8em 0.7em 0 0.7em;
+    line-height: 1em;
+    position: relative;
+    left: -1px;
+    height: 1.4em;
+    margin-right: .8em;
+    border-radius: 4px 0 0 4px;
+}
+
+.details {
+    padding: 20px;
+}

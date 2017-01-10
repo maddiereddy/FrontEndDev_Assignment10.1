@@ -1,0 +1,21 @@
+
+<h2 style="color:blue">Contact Component Page</h2>
+<br>
+<div *ngFor = 'let addr of addresses; let index=index;'
+     [class.odd]='index%2==1' [class.even]='index%2==0'
+     [class.selected]='addr === selectedAddress'
+     (click)='onSelect(addr)'>
+    <ul>
+        <li>
+            <a href="#myModal" class="badge" data-toggle="modal">
+                {{addr.id}}. {{addr.street1}}, {{addr.city}}, {{addr.state}}, {{addr.zipcode}}
+            </a>
+        </li>
+    </ul>
+</div>
+
+<my-modal [address]="selectedAddress">
+    <div class="header" >
+        <h4 style="color: blue">Address Details</h4>
+    </div>
+</my-modal>
