@@ -6,4 +6,4 @@
 3. Create one modal and inject that in component, where show user details address onClick address tab/row.
 
 Notes:
-* Use `npm run serve` to run app
+* Use `npm run serve` to run app at localhost:8080
